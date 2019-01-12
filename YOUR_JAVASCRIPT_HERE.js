@@ -13,8 +13,6 @@ const hero = {
     }
 }
 
-//const heroObj = hero;
-
 function rest(heroObj) {
     heroObj.health = 10;
     return heroObj;
