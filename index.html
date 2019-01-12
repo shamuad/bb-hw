@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
+</head>
+
+<body>
+  <img id="inn" onclick="clickImgRest()" src="https://image.flaticon.com/icons/png/128/1288/1288222.png" style="width:128px;height:128px;">
+  <img id="dagger" onclick="clickImgPickUpItem()" src="https://image.flaticon.com/icons/png/128/124/124367.png" style="width:128px;height:128px;">
+  <img id="bag" onclick="clickImgEquipWeapon()" src="https://image.flaticon.com/icons/png/128/1180/1180483.png" style="width:128px;height:128px;">
+
+  <!-- YOUR HTML HERE -->
+
+  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+  <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+  <div id="mocha"></div>
+
+  <script src="https://unpkg.com/chai@4.1.2/chai.js"></script>
+  <script src="https://unpkg.com/mocha@4.0.1/mocha.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sinon@3/pkg/sinon.js"></script>
+  <script>
+    mocha.setup('bdd')
+  </script>
+  <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+  <script src="game_logic.test.js"></script>
+
+</body>
+
+</html>
